@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class DakotaDoubleBurger
+    public class TrailBurger
     {
         /// <summary>
         /// if the burger has pickle
@@ -14,18 +14,6 @@ namespace CowboyCafe.Data
         /// if the burger has a bun
         /// </summary>
         public bool Bun { get; set; } = true;
-        /// <summary>
-        /// if the burger has tomato
-        /// </summary>
-        public bool Tomato { get; set; } = true;
-        /// <summary>
-        /// if the burger has lettuce
-        /// </summary>
-        public bool Lettuce { get; set; } = true;
-        /// <summary>
-        /// if the burger has mayo
-        /// </summary>
-        public bool Mayo { get; set; } = true;
         /// <summary>
         /// if the burger has ketchup
         /// </summary>
@@ -39,21 +27,21 @@ namespace CowboyCafe.Data
         /// </summary>
         public bool Cheese { get; set; } = true;
         /// <summary>
-        /// price of the dakota double burger
+        /// price of the trail burger
         /// </summary>
         public double Price
         {
-            get { return 5.20; }
+            get { return 4.50; }
         }
         /// <summary>
-        /// Calories of the dakota double burger
+        /// Calories of the trail burger
         /// </summary>
         public uint Calories
         {
-            get { return 464; }
+            get { return 288; }
         }
         /// <summary>
-        /// Special Instructions for the dakota double burger 
+        /// Special Instructions for the trail burger 
         /// </summary>
         public List<string> SpecialInstructions
         {
@@ -63,9 +51,6 @@ namespace CowboyCafe.Data
 
                 if (!Bun) instructions.Add("hold bun");
                 if (!Pickle) instructions.Add("hold pickle");
-                if (!Tomato) instructions.Add("hold tomato");
-                if (!Lettuce) instructions.Add("hold lettuce");
-                if (!Mayo) instructions.Add("hold mayo");
                 if (!Ketchup) instructions.Add("hold ketchup");
                 if (!Mustard) instructions.Add("hold mustard");
                 if (!Cheese) instructions.Add("hold cheese");

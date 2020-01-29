@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class DakotaDoubleBurger
+    public class TexasTripleBurger
     {
         /// <summary>
         /// if the burger has pickle
@@ -39,21 +39,29 @@ namespace CowboyCafe.Data
         /// </summary>
         public bool Cheese { get; set; } = true;
         /// <summary>
-        /// price of the dakota double burger
+        /// If the burger has Bacon
+        /// </summary>
+        public bool Bacon { get; set; } = true;
+        /// <summary>
+        /// if the burger has egg
+        /// </summary>
+        public bool Egg { get; set; } = true;
+        /// <summary>
+        /// price of the texas triple burger
         /// </summary>
         public double Price
         {
-            get { return 5.20; }
+            get { return 6.45; }
         }
         /// <summary>
-        /// Calories of the dakota double burger
+        /// Calories of the texas triple burger
         /// </summary>
         public uint Calories
         {
-            get { return 464; }
+            get { return 698; }
         }
         /// <summary>
-        /// Special Instructions for the dakota double burger 
+        /// Special Instructions for the texas triple burger 
         /// </summary>
         public List<string> SpecialInstructions
         {
@@ -69,6 +77,8 @@ namespace CowboyCafe.Data
                 if (!Ketchup) instructions.Add("hold ketchup");
                 if (!Mustard) instructions.Add("hold mustard");
                 if (!Cheese) instructions.Add("hold cheese");
+                if (!Egg) instructions.Add("hold egg");
+                if (!Bacon) instructions.Add("hold bacon");
 
                 return instructions;
             }

@@ -1,10 +1,19 @@
-﻿using System;
+﻿/*
+
+* Author: John Boehm
+
+* Class name: TrailBurger.cs
+
+* Purpose: Implements the trail burger entree
+
+*/
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class TrailBurger
+    public class TrailBurger:Entree
     {
         /// <summary>
         /// if the burger has pickle
@@ -29,21 +38,21 @@ namespace CowboyCafe.Data
         /// <summary>
         /// price of the trail burger
         /// </summary>
-        public double Price
+        public override double Price
         {
             get { return 4.50; }
         }
         /// <summary>
         /// Calories of the trail burger
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get { return 288; }
         }
         /// <summary>
         /// Special Instructions for the trail burger 
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

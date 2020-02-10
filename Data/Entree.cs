@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+
+* Author: John Boehm
+
+* Class name: Entree.cs
+
+* Purpose: Implements the entree base class
+
+*/
+using System;
 using System.Collections.Generic;
 using System.Text;
 

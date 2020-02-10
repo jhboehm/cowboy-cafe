@@ -1,10 +1,19 @@
-﻿using System;
+﻿/*
+
+* Author: John Boehm
+
+* Class name: AngryChicken.cs
+
+* Purpose: Implements the angry chicken entree
+
+*/
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class AngryChicken
+    public class AngryChicken: Entree
     {
         private bool bread = true;
         /// <summary>
@@ -22,21 +31,21 @@ namespace CowboyCafe.Data
         /// <summary>
         /// price of the angry chicken
         /// </summary>
-        public double Price
+        public override double Price
         {
             get { return 5.99; }
         }
         /// <summary>
         /// Calories of the angry chicken
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get { return 190; }
         }
         /// <summary>
         /// Special Instructions for the angry chicken 
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

@@ -1,10 +1,19 @@
-﻿using System;
+﻿/*
+
+* Author: John Boehm
+
+* Class name: PecosPulledPork.cs
+
+* Purpose: Implements the pecos pulled pork entree
+
+*/
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class PecosPulledPork
+    public class PecosPulledPork:Entree
     {
         private bool bread = true;
         /// <summary>
@@ -22,21 +31,21 @@ namespace CowboyCafe.Data
         /// <summary>
         /// price of the pecos pulled pork
         /// </summary>
-        public double Price
+        public override double Price
         {
             get { return 5.88; }
         }
         /// <summary>
         /// Calories of the pecos pulled pork
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get { return 528; }
         }
         /// <summary>
         /// Special Instructions for the pecos pulled pork 
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

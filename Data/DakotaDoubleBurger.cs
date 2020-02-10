@@ -1,10 +1,19 @@
-﻿using System;
+﻿/*
+
+* Author: John Boehm
+
+* Class name: DakotaDoubleBurger.cs
+
+* Purpose: Implements the dakota double burger entree
+
+*/
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class DakotaDoubleBurger
+    public class DakotaDoubleBurger:Entree
     {
         /// <summary>
         /// if the burger has pickle
@@ -41,21 +50,21 @@ namespace CowboyCafe.Data
         /// <summary>
         /// price of the dakota double burger
         /// </summary>
-        public double Price
+        public override double Price
         {
             get { return 5.20; }
         }
         /// <summary>
         /// Calories of the dakota double burger
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get { return 464; }
         }
         /// <summary>
         /// Special Instructions for the dakota double burger 
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

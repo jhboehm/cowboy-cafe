@@ -1,15 +1,24 @@
-﻿using System;
+﻿/*
+
+* Author: John Boehm
+
+* Class name: AngryChicken.cs
+
+* Purpose: Implements the Rustlers Ribs entree
+
+*/
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class RustlersRibs
+    public class RustlersRibs:Entree
     {
         /// <summary>
         /// price of the ribs
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -19,14 +28,14 @@ namespace CowboyCafe.Data
         /// <summary>
         /// calories for the ribs
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
                 return 894;
             }
         }
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

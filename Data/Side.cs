@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*
+
+* Author: Nathan Bean
+
+* Edited by: John Boehm
+
+* Class name:Side.cs
+
+* Purpose: Base class for the sides
+
+*/
+using System;
 using System.Collections.Generic;
 using System.Text;
 

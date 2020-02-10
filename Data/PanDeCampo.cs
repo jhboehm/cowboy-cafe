@@ -2,9 +2,9 @@
 
 * Author: John Boehm
 
-* Class name: ChiliCheeseFries.cs
+* Class name: PanDeCampo.cs
 
-* Purpose:implements the chili cheese fries side
+* Purpose: Implements the pan de camp side 
 
 */
 using System;
@@ -13,10 +13,10 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class ChiliCheeseFries : Side
+    public class PanDeCampo : Side
     {
         /// <summary>
-        /// gets the price of chili cheese fries
+        /// gets the price of the pan de campo
         /// </summary>
         public override double Price
         {
@@ -25,11 +25,11 @@ namespace CowboyCafe.Data
                 switch (Size)
                 {
                     case Size.Large:
-                        return 3.99;
-                    case Size.Medium:
-                        return 2.99;
-                    case Size.Small:
                         return 1.99;
+                    case Size.Medium:
+                        return 1.79;
+                    case Size.Small:
+                        return 1.59;
                     default:
                         throw new NotImplementedException("Unknown Size");
                 }
@@ -37,7 +37,7 @@ namespace CowboyCafe.Data
             }
         }
         /// <summary>
-        /// gets the calories for the chili chese fries
+        /// gets the price of the pan de campo side
         /// </summary>
         public override uint Calories
         {
@@ -46,11 +46,11 @@ namespace CowboyCafe.Data
                 switch (Size)
                 {
                     case Size.Large:
-                        return 610;
+                        return 367;
                     case Size.Medium:
-                        return 524;
+                        return 269;
                     case Size.Small:
-                        return 433;
+                        return 227;
                     default:
                         throw new NotImplementedException("Unknown Size");
                 }
@@ -58,5 +58,4 @@ namespace CowboyCafe.Data
             }
         }
     }
-
 }

@@ -22,8 +22,8 @@
         <StackPanel>
             <TextBlock TextAlignment="Center">Entrees</TextBlock>
             
-            <Button Name ="AddAngryChickenbutton">AngryChicken</Button>
-            <Button>Cowpoke Chili</Button>
+            <Button Name ="AddAngryChickenButton" Click="AddAngryChickenButton_Click">Angry Chicken</Button>
+            <Button Name ="AddCowpokeChiliButton" Click="AddCowpokeChiliButton_Click" >Cowpoke Chili</Button>
         </StackPanel>
         
         <StackPanel Grid.Column = "1">
@@ -32,5 +32,21 @@
             <Button>Chili Cheese Fries</Button>
         </StackPanel>
 
+        
+
+       
+        <StackPanel Grid.Column = "2">
+            <TextBlock TextAlignment="Center">Drinks</TextBlock>
+            <Button>Baked Beans</Button>
+            <Button>Chili Cheese Fries</Button>
+        </StackPanel>
+
+
+
+
+        <StackPanel Grid.Column = "3">
+            <TextBlock TextAlignment="Center">Order</TextBlock>
+            <ListBox Name ="OrderList"/>
+        </StackPanel>
     </Grid>
 </UserControl>

@@ -71,5 +71,13 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+        public override string ToString()
+        {
+            if (Flavor == SodaFlavor.OrangeSoda) { return Size.ToString() + " Orange Soda" + " Jerked Soda"; }
+            if (Flavor == SodaFlavor.BirchBeer) { return Size.ToString() + " Birch Beer" + " Jerked Soda"; }
+            if (Flavor == SodaFlavor.CreamSoda) { return Size.ToString() + " Cream Soda" + " Jerked Soda"; }
+            if (Flavor == SodaFlavor.RootBeer) { return Size.ToString() + " Root Beer" + " Jerked Soda"; }
+            return Size.ToString() + " " + Flavor + " Jerked Soda";
+        }
     }
 }

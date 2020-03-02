@@ -6,6 +6,7 @@ namespace CowboyCafe.Data
 {
     public class Order:INotifyPropertyChanged
     {
+        private static uint lastOrderNumber;
         public event PropertyChangedEventHandler PropertyChanged;
         public double Subtotal => 0;
         public IEnumerable<IOrderItem> Items => throw new NotImplementedException();

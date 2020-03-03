@@ -96,6 +96,13 @@ namespace CowboyCafe.DataTests
             });
 
         }
+        [Fact]
+        public void TwoOrderNumbersShouldNotBeTheSame()
+        {
+            var order = new Order();
+            var order1 = new Order();
+            Assert.NotEqual(order.OrderNumber, order1.OrderNumber);
+        }
 
     }
 }

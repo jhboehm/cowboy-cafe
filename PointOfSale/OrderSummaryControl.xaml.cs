@@ -22,5 +22,10 @@ namespace PointOfSale
         {
             InitializeComponent();
         }
+
+        public void AddSubtotal()
+        {
+            
+        }
     }
 }

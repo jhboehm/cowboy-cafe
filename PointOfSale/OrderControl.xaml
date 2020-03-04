@@ -58,5 +58,8 @@
             <TextBlock TextAlignment="Center">Order</TextBlock>
             <ListBox Name ="OrderList"/>
         </StackPanel>
+        <Border Name="Container" Grid.Row="1">
+            <local:MenuItemSelectionControl/>
+        </Border>
     </Grid>
 </UserControl>
